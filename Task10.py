@@ -9,14 +9,11 @@ def sep(x):
     R=x.split("\t")
     return (int(R[1]),int(R[2]))
 
-ge5star=Rdata.map(sep).filter(lambda x: x[0]==2).filter(lambda x: x[1]==5).count()
-ge4star=Rdata.map(sep).filter(lambda x: x[0]==2).filter(lambda x: x[1]==4).count()
-ge3star=Rdata.map(sep).filter(lambda x: x[0]==2).filter(lambda x: x[1]==3).count()
-ge2star=Rdata.map(sep).filter(lambda x: x[0]==2).filter(lambda x: x[1]==2).count()
-ge1star=Rdata.map(sep).filter(lambda x: x[0]==2).filter(lambda x: x[1]==1).count()
-
-print("5 star: "+ str(ge5star))
-print("4 star: "+ str(ge4star))
-print("3 star: "+ str(ge3star))
-print("2 star: "+ str(ge2star))
-print("1 star: "+ str(ge1star))
+movie_id=2
+gestar=[0]*5
+for i in range(0,5):
+    gestar[i]=Rdata.map(sep).filter(lambda x: x[0]==movie_id).filter(lambda x: x[1]==i+1).count()
+print("Movie ID: "+str(movie_id))
+print("---------------------")
+for i in range(4,-1,-1):
+    print(str(i+1)+" star: "+ str(gestar[i]))

@@ -1,4 +1,4 @@
-1|Mikey|Java|43|M
+1|Mikey|Java|139|M
 2|Storey|Excel|19|M
-4|Alice|Python|111|F
-5|Roberta|TensorFLow|123|F
+4|Alice|Python|115|F
+5|Roberta|TensorFLow|102|F
