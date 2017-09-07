@@ -1,4 +1,5 @@
-dic = {'RegNo': [1,2],'Name': ['Faho','Emo'], 'Graduate': ['No','yes']}
+dic = {'1': ['one'],'2': ['two']}
 
 print(dic)
-print(dic['Name'])
+print(dic['1'])
+print(dic.get('1'))

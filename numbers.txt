@@ -1,0 +1,12 @@
+RegNo,Subject,Mark
+1,Maths,67
+1,Physics,74 
+1,Chemistry,66
+2,Physics,75
+2,Chemistry,83
+2,Biology,64
+3,Physics,74
+3,Chemistry,34
+3,Maths,64
+4,Physics,85
+4,Maths,79
